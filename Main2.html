@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adve Corporation - Innovators since 1763. Explore our history, products, and legacy.">
+    <meta name="author" content="Adve Corporation">
+    <title>Adve Corporation</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Copperplate', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Primary Accent Color: Deep Purple */
+        header {
+            background-color: #4B0082; /* Deep Purple Accent */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #333;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #FFD700; /* Secondary Gold Accent */
+        }
+
+        /* Main Content Area */
+        section {
+            padding: 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        section h2 {
+            color: #4B0082; /* Deep Purple Accent for Section Titles */
+            font-size: 2.5em;
+        }
+
+        section p {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            color: #FFD700; /* Gold Accent for Footer */
+        }
+
+        /* Tab Content Styles */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Adve Corporation</h1>
+        <p>Innovators since 1763. A legacy of excellence and technology.</p>
+    </header>
+
+    <!-- Navigation Bar (Tabs) -->
+    <nav>
+        <ul>
+            <li><a href="#company-overview" onclick="showTab('company-overview')">Company Overview</a></li>
+            <li><a href="#our-history" onclick="showTab('our-history')">Our History</a></li>
+            <li><a href="#products" onclick="showTab('products')">Products</a></li>
+            <li><a href="#settings" onclick="showTab('settings')">Settings</a></li>
+            <li><a href="#version" onclick="showTab('version')">Version</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Sections (Tabs) -->
+    <section id="company-overview" class="tab-content active">
+        <h2>Company Overview</h2>
+        <p>Adve Corporation has been a leader in innovation since 1763. Our mission is to bring cutting-edge technology and products to people around the world. We continue to push the boundaries of technology and sustainability to create a better future for all.</p>
+    </section>
+
+    <section id="our-history" class="tab-content">
+        <h2>Our History</h2>
+        <p>Founded in 1763, Adve Corporation has a long and rich history of technological advancements. From our early innovations in machinery to today's groundbreaking work in AI and sustainable solutions, Adve continues to be at the forefront of industry changes.</p>
+    </section>
+
+    <section id="products" class="tab-content">
+        <h2>Our Products</h2>
+        <p>We offer a wide range of products that are designed to meet the needs of consumers and businesses alike. Whether you're looking for the latest in home technology, mobile devices, or sustainable solutions, Adve has the product for you.</p>
+    </section>
+
+    <section id="settings" class="tab-content">
+        <h2>Website Settings</h2>
+        <p><strong>Theme:</strong> Dark Mode (Purple and Gold accents)</p>
+        <p><strong>Font:</strong> Copperplate</p>
+        <p><strong>Layout:</strong> Multi-section tabbed navigation</p>
+    </section>
+
+    <section id="version" class="tab-content">
+        <h2>Version History</h2>
+        <p><strong>Version 0.1:</strong> Initial release with basic content and navigation.</p>
+        <p><strong>Version 0.2:</strong> Added settings and version history sections, with enhanced navigation structure.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Adve Corporation. All rights reserved. | Made in 1993.</p>
+    </footer>
+
+    <!-- JavaScript for Tab Switching -->
+    <script>
+        function showTab(tabId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.tab-content');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            const activeSection = document.getElementById(tabId);
+            activeSection.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
